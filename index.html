@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Números</title>
+    <!-- Importando Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container my-4">
+        <h1 class="text-center">Conversor de Números</h1>
+        <div class="row mt-4">
+            <!-- Converter Decimal -->
+            <div class="col-md-6">
+                <div class="card mb-4" style="background-color: aqua;">
+                    <div class="card-body">
+                        <h2>Converter Decimal</h2>
+                        <div class="mb-3">
+                            <input type="number" class="form-control" id="decimal" placeholder="Digite um número decimal">
+                        </div>
+                        <button class="btn btn-primary" onclick="convertFromDecimal()">Converter</button>
+                        <button class="btn btn-secondary" onclick="clearDecimal()">Limpar</button>
+                        <p class="mt-3">Binário: <span id="binarioFromDecimal"></span></p>
+                        <p>Hexadecimal: <span id="hexFromDecimal"></span></p>
+                        <p>Octal: <span id="octalFromDecimal"></span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Converter Binário -->
+            <div class="col-md-6">
+                <div class="card mb-4" style="background-color: rgb(152, 255, 126);">
+                    <div class="card-body">
+                        <h2>Converter Binário</h2>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="binario" placeholder="Digite um número binário">
+                        </div>
+                        <button class="btn btn-primary" onclick="convertFromBinary()">Converter</button>
+                        <button class="btn btn-secondary" onclick="clearBinary()">Limpar</button>
+                        <p class="mt-3">Decimal: <span id="decimalFromBinary"></span></p>
+                        <p>Hexadecimal: <span id="hexFromBinary"></span></p>
+                        <p>Octal: <span id="octalFromBinary"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Converter Hexadecimal -->
+            <div class="col-md-6">
+                <div class="card mb-4" style="background-color: rgb(211, 235, 79);">
+                    <div class="card-body">
+                        <h2>Converter Hexadecimal</h2>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="hexadecimal" placeholder="Digite um número hexadecimal">
+                        </div>
+                        <button class="btn btn-primary" onclick="convertFromHexadecimal()">Converter</button>
+                        <button class="btn btn-secondary" onclick="clearHexadecimal()">Limpar</button>
+                        <p class="mt-3">Binário: <span id="binarioFromHex"></span></p>
+                        <p>Decimal: <span id="decimalFromHex"></span></p>
+                        <p>Octal: <span id="octalFromHex"></span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Converter Octal -->
+            <div class="col-md-6">
+                <div class="card mb-4" style="background-color: rgb(238, 119, 149);">
+                    <div class="card-body">
+                        <h2>Converter Octal</h2>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="octal" placeholder="Digite um número octal">
+                        </div>
+                        <button class="btn btn-primary" onclick="convertFromOctal()">Converter</button>
+                        <button class="btn btn-secondary" onclick="clearOctal()">Limpar</button>
+                        <p class="mt-3">Binário: <span id="binarioFromOctal"></span></p>
+                        <p>Decimal: <span id="decimalFromOctal"></span></p>
+                        <p>Hexadecimal: <span id="hexFromOctal"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

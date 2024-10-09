@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descrição das Bases Numéricas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .card {
+            height: 100%; /* Faz com que todos os cards tenham a mesma altura */
+        }
+        .mb-4 { 
+            margin-bottom: 1.5rem; /* Aumenta o espaçamento entre as linhas */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Descrição das Bases Numéricas</h1>
+    
+        <div class="row" >
+        
+        <div class="col-md-6" style="padding: 20px;">
+            <div class="card mb-4" style="background-color: aqua;">
+                <div class="card-body">
+                    <h5 class="card-title">Base Decimal</h5>
+                    <p class="card-text">
+                        A base decimal é a que utilizamos no nosso dia a dia, composta por dez dígitos de 0 a 9. É amplamente usada em cálculos e medições.
+                    </p>
+                    <p class="card-text"><strong>Passo a Passo para Conversão de Decimal para Decimal:</strong></p>
+                    <ol>
+                        <li>Não há conversão necessária, pois é a base padrão.</li>
+                        <li>Os números permanecem os mesmos.</li>
+                    </ol>
+                    <p class="card-text"><strong>Exemplo:</strong> O número "23" já está em decimal.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6" style="padding: 20px;">
+            <div class="card mb-4" style="background-color: rgb(152, 255, 126);">
+                <div class="card-body">
+                    <h5 class="card-title">Base Binária</h5>
+                    <p class="card-text">
+                        A base binária utiliza apenas dois dígitos: 0 e 1. É fundamental em computação, pois os computadores processam informações em formato binário.
+                    </p>
+                    <p class="card-text"><strong>Passo a Passo para Conversão de Decimal para Binário:</strong></p>
+                    <ol>
+                        <li>Divida o número decimal por 2.</li>
+                        <li>Registre o quociente e o resto.</li>
+                        <li>Continue dividindo o quociente por 2 até que ele seja 0.</li>
+                        <li>Os restos, lidos de baixo para cima, formam o número binário.</li>
+                    </ol>
+                    <p class="card-text"><strong>Exemplo:</strong> Converter 5 para binário:</p>
+                    <pre>5 ÷ 2 = 2, resto 1
+2 ÷ 2 = 1, resto 0
+1 ÷ 2 = 0, resto 1
+Portanto, 5 = 101 (binário)</pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6" style="padding: 20px;">
+            <div class="card mb-4" style="background-color: rgb(211, 235, 79);">
+                <div class="card-body">
+                    <h5 class="card-title">Base Hexadecimal</h5>
+                    <p class="card-text">
+                        A base hexadecimal utiliza dezesseis símbolos, de 0 a 9 e de A a F. É frequentemente utilizada em programação e design de cores.
+                    </p>
+                    <p class="card-text"><strong>Passo a Passo para Conversão de Decimal para Hexadecimal:</strong></p>
+                    <ol>
+                        <li>Divida o número decimal por 16.</li>
+                        <li>Registre o quociente e o resto.</li>
+                        <li>Continue dividindo o quociente por 16 até que ele seja 0.</li>
+                        <li>Os restos, lidos de baixo para cima, formam o número hexadecimal.</li>
+                    </ol>
+                    <p class="card-text"><strong>Exemplo:</strong> Converter 255 para hexadecimal:</p>
+                    <pre>255 ÷ 16 = 15, resto 15 (F)
+15 ÷ 16 = 0, resto 15 (F)
+Portanto, 255 = FF (hexadecimal)</pre>
+                </div>
+            </div>
+        </div>
+    
+            
+        <div class="col-md-6" style="padding: 20px;">
+            <div class="card mb-4" style="background-color: rgb(238, 119, 149);">
+                <div class="card-body">
+                    <h5 class="card-title">Base Octal</h5>
+                    <p class="card-text">
+                        A base octal é uma representação numérica que utiliza oito dígitos, de 0 a 7. É menos comum, mas é utilizada em alguns sistemas computacionais.
+                    </p>
+                    <p class="card-text"><strong>Passo a Passo para Conversão de Decimal para Octal:</strong></p>
+                    <ol>
+                        <li>Divida o número decimal por 8.</li>
+                        <li>Registre o quociente e o resto.</li>
+                        <li>Continue dividindo o quociente por 8 até que ele seja 0.</li>
+                        <li>Os restos, lidos de baixo para cima, formam o número octal.</li>
+                    </ol>
+                    <p class="card-text"><strong>Exemplo:</strong> Converter 10 para octal:</p>
+                    <pre>10 ÷ 8 = 1, resto 2
+1 ÷ 8 = 0, resto 1
+Portanto, 10 = 12 (octal)</pre>
+                </div>
+            </div>
+        </div>
+
+    </div>
+        
+    <div class="container mt-5 mb-5 text-center">
+        <a href="index.html" class="btn btn-primary">Voltar para a Página Inicial</a>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
